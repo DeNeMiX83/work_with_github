@@ -1,13 +1,15 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
-from sqlite import cur, con
+
+from д2_Капучино.addEditCoffeeForm import Ui_Dialog
+from д2_Капучино.data.sqlite import cur, con
 
 
-class AddCoffee(QDialog):
+class AddCoffee(QDialog, Ui_Dialog):
     def __init__(self, id=None):
         super(AddCoffee, self).__init__()
         self.id = id
-        uic.loadUi('addEditCoffeeForm.ui', self)
+        self.setupUi(self)
         self.initUi()
 
     def initUi(self):

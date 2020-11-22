@@ -1,7 +1,8 @@
 import sys
 from edit_form import AddCoffee
-from sqlite import cur
 from PyQt5.QtWidgets import QWidget, QApplication, QTableWidget, QTableWidgetItem, QPushButton
+
+from д2_Капучино.data.sqlite import cur
 
 
 class Example(QWidget):

@@ -1,4 +1,4 @@
 from sqlite3 import connect
 
-con = connect('coffee.db')
+con = connect('data/coffee.db')
 cur = con.cursor()
