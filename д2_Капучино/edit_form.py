@@ -1,8 +1,8 @@
 from PyQt5 import uic
 from PyQt5.QtWidgets import QDialog
 
-from д2_Капучино.addEditCoffeeForm import Ui_Dialog
-from д2_Капучино.data.sqlite import cur, con
+from addEditCoffeeForm import Ui_Dialog
+from data.sqlite import cur, con
 
 
 class AddCoffee(QDialog, Ui_Dialog):
